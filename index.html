@@ -284,6 +284,99 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://shiff.top/2023/03/11/%E5%88%A9%E7%94%A8idea%E5%92%8Cmaven%E4%BB%93%E5%BA%93%E4%B8%8B%E8%BD%BD%E4%BE%9D%E8%B5%96/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars.githubusercontent.com/u/55538843?s=96&v=4">
+      <meta itemprop="name" content="shiff">
+      <meta itemprop="description" content="千里之行，始于足下">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="微弱的光">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/03/11/%E5%88%A9%E7%94%A8idea%E5%92%8Cmaven%E4%BB%93%E5%BA%93%E4%B8%8B%E8%BD%BD%E4%BE%9D%E8%B5%96/" class="post-title-link" itemprop="url">利用idea和maven仓库下载依赖</a>
+        </h2>
+
+        <div class="post-meta">
+
+
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-03-11 05:53:29 / 修改时间：05:55:10" itemprop="dateCreated datePublished" datetime="2023-03-11T05:53:29+08:00">2023-03-11</time>
+            </span>
+
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+              <span>627</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="利用idea和maven仓库下载依赖"><a href="#利用idea和maven仓库下载依赖" class="headerlink" title="利用idea和maven仓库下载依赖"></a>利用idea和maven仓库下载依赖</h2><p>以添加<a target="_blank" rel="noopener" href="https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-boot-starter">MyBatis Plus</a>依赖为例</p>
+<p>背景：用spring boot 初始化一个项目后，发现MyBatis Plus依赖没有添加</p>
+<p><strong>1.在maven仓库搜索mybaits-plus</strong></p>
+<p>仓库地址：<a target="_blank" rel="noopener" href="https://mvnrepository.com/%EF%BC%88%E4%B8%8D%E5%90%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%E4%B8%8D%E4%B8%80%E6%A0%B7%EF%BC%8C%E6%88%91%E7%94%A8%E7%9A%84%E7%81%AB%E7%8B%90%E6%B5%8F%E8%A7%88%E5%99%A8%EF%BC%8C%E6%84%9F%E8%A7%89%E6%AF%94%E7%94%A8%E8%B0%B7%E6%AD%8C%E8%AE%BF%E9%97%AE%E5%BF%AB%E5%BE%88%E5%A4%9A%EF%BC%8C%E5%A6%82%E6%9E%9C%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE%EF%BC%8C%E5%8F%AF%E4%BB%A5%E6%8D%A2%E6%B5%8F%E8%A7%88%E5%99%A8%E8%AF%95%E8%AF%95%EF%BC%89">https://mvnrepository.com/（不同浏览器访问速度不一样，我用的火狐浏览器，感觉比用谷歌访问快很多，如果无法访问，可以换浏览器试试）</a></p>
+<p><img src="https://cdn.staticaly.com/gh/SHIFFF/Blogcdn@master/img/image-20230311053841423.png" alt="image-20230311053841423"></p>
+<p>点击选中使用最多的包</p>
+<p><strong>2.版本可以自行选择，尽量选择使用人数比较多的那个版本</strong></p>
+<p><img src="https://cdn.staticaly.com/gh/SHIFFF/Blogcdn@master/img/image-20230311053955492.png" alt="image-20230311053955492"></p>
+<p><strong>3.如果使用maven管理的包，直接复制框中的代码</strong></p>
+<p><img src="https://cdn.staticaly.com/gh/SHIFFF/Blogcdn@master/img/image-20230311054228774.png" alt="image-20230311054228774"></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-boot-starter --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.baomidou<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mybatis-plus-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.5.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>4.将复制的代码黏贴到pom.xml文件的依赖标签<code>&lt;dependencies&gt;</code>下，同时点击右上角的M图标进行更新</strong></p>
+<p><img src="https://cdn.staticaly.com/gh/SHIFFF/Blogcdn@master/img/image-20230311054522516.png" alt="image-20230311054522516"></p>
+<p>右上角没有图标的话，可以右边栏（或者在左边）的Maven标签打开配置栏</p>
+<p><img src="https://cdn.staticaly.com/gh/SHIFFF/Blogcdn@master/img/image-20230311054738541.png" alt="image-20230311054738541"></p>
+<p>点击刷新按钮进行更新下载依赖</p>
+<p><img src="https://cdn.staticaly.com/gh/SHIFFF/Blogcdn@master/img/image-20230311054938693.png" alt="image-20230311054938693"></p>
+
+      
+    </div>
+
+    
+    
+    
+
+        
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://shiff.top/2023/03/11/%E6%97%A0%E6%95%88%E7%9A%84%E7%9B%AE%E6%A0%87%E5%8F%91%E8%A1%8C%E7%89%8817/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -522,14 +615,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
