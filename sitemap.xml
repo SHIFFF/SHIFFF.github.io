@@ -74,6 +74,20 @@
 
   
   <url>
+    <loc>http://shiff.top/tags/github/</loc>
+    <lastmod>2023-03-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://shiff.top/tags/%E8%B8%A9%E5%9D%91/</loc>
+    <lastmod>2023-03-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://shiff.top/tags/springboot/</loc>
     <lastmod>2023-03-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -82,13 +96,6 @@
   
   <url>
     <loc>http://shiff.top/tags/idea/</loc>
-    <lastmod>2023-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://shiff.top/tags/%E8%B8%A9%E5%9D%91/</loc>
     <lastmod>2023-03-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
