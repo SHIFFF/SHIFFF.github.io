@@ -1,66 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>github-clone克隆报错</title>
-      <link href="/2023/03/11/github-clone%E5%85%8B%E9%9A%86%E6%8A%A5%E9%94%99/"/>
-      <url>/2023/03/11/github-clone%E5%85%8B%E9%9A%86%E6%8A%A5%E9%94%99/</url>
-      
-        <content type="html"><![CDATA[<p><img src="https://cdn.staticaly.com/gh/SHIFFF/Blogcdn@master/img/image-20230307110603157.png" alt="image-20230307110603157"></p><p>报错两次</p><p><strong>1. OpenSSL SSL_read: Connection was reset, errno 10054</strong></p><p>这是服务器的SSL证书没有经过第三方机构的签署，所以报错。错误原因可能是网络不稳定，连接超时造成的。重试clone</p><p><strong>2.The requested URL returned error: 408</strong></p><p>408很可能是请求超时，大概率还是网络问题，再次重试</p><p>经过两次重试后成功！</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> github </tag>
-            
-            <tag> 踩坑 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>无效的目标发行版17</title>
-      <link href="/2023/03/11/%E6%97%A0%E6%95%88%E7%9A%84%E7%9B%AE%E6%A0%87%E5%8F%91%E8%A1%8C%E7%89%8817/"/>
-      <url>/2023/03/11/%E6%97%A0%E6%95%88%E7%9A%84%E7%9B%AE%E6%A0%87%E5%8F%91%E8%A1%8C%E7%89%8817/</url>
-      
-        <content type="html"><![CDATA[<p><img src="https://cdn.staticaly.com/gh/SHIFFF/Blogcdn@master/img/image-20230310153146114.png" alt="image-20230310153146114"></p><p>出现无效的源发行版 就是jdk版本环境不一致造成的</p><p>在spring Initializr上下载的spring boot 版本默认是3.0.4</p><p>但是 springboot3.0 需要jdk17支持，如果没有安装jdk17 只需把springboot版本降低即可</p><p>我用的jdk版本是1.8，所以需要降低springboot版本</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 踩坑 </tag>
-            
-            <tag> springboot </tag>
-            
-            <tag> idea </tag>
-            
-            <tag> jdk </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2023/02/27/hello-world/"/>
-      <url>/2023/02/27/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-  
-  
+<search>
+  <entry>
+    <title>github clone克隆报错</title>
+    <url>/2023/03/11/github-clone%E5%85%8B%E9%9A%86%E6%8A%A5%E9%94%99/</url>
+    <content><![CDATA[<h2 id="date-2023-03-11-04-57-47"><a href="#date-2023-03-11-04-57-47" class="headerlink" title="date: 2023-03-11 04:57:47"></a>date: 2023-03-11 04:57:47</h2><h2 id="tags-github-踩坑top-true"><a href="#tags-github-踩坑top-true" class="headerlink" title="tags:- github- 踩坑top: true"></a>tags:<br>- github<br>- 踩坑<br>top: true</h2><p><img src="https://cdn.staticaly.com/gh/SHIFFF/Blogcdn@master/img/image-20230307110603157.png" alt="image-20230307110603157"></p>
+<p>报错两次</p>
+<p><strong>1. OpenSSL SSL_read: Connection was reset, errno 10054</strong></p>
+<p>这是服务器的SSL证书没有经过第三方机构的签署，所以报错。错误原因可能是网络不稳定，连接超时造成的。重试clone</p>
+<p><strong>2.The requested URL returned error: 408</strong></p>
+<p>408很可能是请求超时，大概率还是网络问题，再次重试</p>
+<p>经过两次重试后成功！</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>无效的目标发行版17</title>
+    <url>/2023/03/11/%E6%97%A0%E6%95%88%E7%9A%84%E7%9B%AE%E6%A0%87%E5%8F%91%E8%A1%8C%E7%89%8817/</url>
+    <content><![CDATA[<p><img src="https://cdn.staticaly.com/gh/SHIFFF/Blogcdn@master/img/image-20230310153146114.png" alt="image-20230310153146114"></p>
+<p>出现无效的源发行版 就是jdk版本环境不一致造成的</p>
+<p>在spring Initializr上下载的spring boot 版本默认是3.0.4</p>
+<p>但是 springboot3.0 需要jdk17支持，如果没有安装jdk17 只需把springboot版本降低即可</p>
+<p>我用的jdk版本是1.8，所以需要降低springboot版本</p>
+]]></content>
+      <tags>
+        <tag>springboot</tag>
+        <tag>idea</tag>
+        <tag>踩坑</tag>
+        <tag>jdk</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2023/02/27/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
 </search>

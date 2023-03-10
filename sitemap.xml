@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://shiff.top/2023/02/27/hello-world/</loc>
+    <loc>http://shiff.top/2023/03/11/github-clone%E5%85%8B%E9%9A%86%E6%8A%A5%E9%94%99/</loc>
     
     <lastmod>2023-03-10</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://shiff.top/2023/03/11/github-clone%E5%85%8B%E9%9A%86%E6%8A%A5%E9%94%99/</loc>
+    <loc>http://shiff.top/2023/02/27/hello-world/</loc>
     
     <lastmod>2023-03-10</lastmod>
     
@@ -74,20 +74,6 @@
 
   
   <url>
-    <loc>http://shiff.top/tags/github/</loc>
-    <lastmod>2023-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://shiff.top/tags/%E8%B8%A9%E5%9D%91/</loc>
-    <lastmod>2023-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://shiff.top/tags/springboot/</loc>
     <lastmod>2023-03-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -96,6 +82,13 @@
   
   <url>
     <loc>http://shiff.top/tags/idea/</loc>
+    <lastmod>2023-03-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://shiff.top/tags/%E8%B8%A9%E5%9D%91/</loc>
     <lastmod>2023-03-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
