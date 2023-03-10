@@ -21,7 +21,8 @@
   <entry>
     <title>无效的目标发行版17</title>
     <url>/2023/03/11/17/</url>
-    <content><![CDATA[<p>出现无效的源发行版 就是jdk版本环境不一致造成的</p>
+    <content><![CDATA[<p><img src="https://cdn.staticaly.com/gh/SHIFFF/Blogcdn@master/img/image-20230310153146114.png" alt="image-20230310153146114"></p>
+<p>出现无效的源发行版 就是jdk版本环境不一致造成的</p>
 <p>在spring Initializr上下载的spring boot 版本默认是3.0.4</p>
 <p>但是 springboot3.0 需要jdk17支持，如果没有安装jdk17 只需把springboot版本降低即可</p>
 <p>我用的jdk版本是1.8，所以需要降低springboot版本</p>
