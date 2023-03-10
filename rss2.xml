@@ -9,18 +9,35 @@
     <atom:link href="http://shiff.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>千里之行，始于足下</description>
-    <pubDate>Fri, 10 Mar 2023 20:12:04 GMT</pubDate>
+    <pubDate>Fri, 10 Mar 2023 20:24:58 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>17</title>
+      <title>无效的目标发行版17</title>
       <link>http://shiff.top/2023/03/11/17/</link>
       <guid>http://shiff.top/2023/03/11/17/</guid>
       <pubDate>Fri, 10 Mar 2023 20:12:04 GMT</pubDate>
       
+        
+        
+      <description>&lt;p&gt;出现无效的源发行版 就是jdk版本环境不一致造成的&lt;/p&gt;
+&lt;p&gt;在spring Initializr上下载的spring boot 版本默认是3.0.4&lt;/p&gt;
+&lt;p&gt;但是 springboot3.0 需要jdk17支持，如果没有安装jdk17 只需把springboot</description>
+        
       
       
       
+      <content:encoded><![CDATA[<p>出现无效的源发行版 就是jdk版本环境不一致造成的</p><p>在spring Initializr上下载的spring boot 版本默认是3.0.4</p><p>但是 springboot3.0 需要jdk17支持，如果没有安装jdk17 只需把springboot版本降低即可</p><p>我用的jdk版本是1.8，所以需要降低springboot版本</p>]]></content:encoded>
+      
+      
+      
+      <category domain="http://shiff.top/tags/springboot/">springboot</category>
+      
+      <category domain="http://shiff.top/tags/idea/">idea</category>
+      
+      <category domain="http://shiff.top/tags/%E8%B8%A9%E5%9D%91/">踩坑</category>
+      
+      <category domain="http://shiff.top/tags/jdk/">jdk</category>
       
       
       <comments>http://shiff.top/2023/03/11/17/#disqus_thread</comments>
