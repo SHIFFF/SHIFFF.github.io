@@ -9,13 +9,40 @@
     <atom:link href="http://shiff.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>千里之行，始于足下</description>
-    <pubDate>Fri, 10 Mar 2023 20:49:45 GMT</pubDate>
+    <pubDate>Fri, 10 Mar 2023 21:00:34 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
+      <title>github-clone克隆报错</title>
+      <link>http://shiff.top/2023/03/11/github-clone%E5%85%8B%E9%9A%86%E6%8A%A5%E9%94%99/</link>
+      <guid>http://shiff.top/2023/03/11/github-clone%E5%85%8B%E9%9A%86%E6%8A%A5%E9%94%99/</guid>
+      <pubDate>Fri, 10 Mar 2023 20:57:47 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.staticaly.com/gh/SHIFFF/Blogcdn@master/img/image-20230307110603157.png&quot; alt=&quot;image-20230307110603157&quot;&gt;&lt;/p&gt;
+&lt;p&gt;报错两次&lt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.staticaly.com/gh/SHIFFF/Blogcdn@master/img/image-20230307110603157.png" alt="image-20230307110603157"></p><p>报错两次</p><p><strong>1. OpenSSL SSL_read: Connection was reset, errno 10054</strong></p><p>这是服务器的SSL证书没有经过第三方机构的签署，所以报错。错误原因可能是网络不稳定，连接超时造成的。重试clone</p><p><strong>2.The requested URL returned error: 408</strong></p><p>408很可能是请求超时，大概率还是网络问题，再次重试</p><p>经过两次重试后成功！</p>]]></content:encoded>
+      
+      
+      
+      <category domain="http://shiff.top/tags/github/">github</category>
+      
+      <category domain="http://shiff.top/tags/%E8%B8%A9%E5%9D%91/">踩坑</category>
+      
+      
+      <comments>http://shiff.top/2023/03/11/github-clone%E5%85%8B%E9%9A%86%E6%8A%A5%E9%94%99/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>无效的目标发行版17</title>
-      <link>http://shiff.top/2023/03/11/17/</link>
-      <guid>http://shiff.top/2023/03/11/17/</guid>
+      <link>http://shiff.top/2023/03/11/%E6%97%A0%E6%95%88%E7%9A%84%E7%9B%AE%E6%A0%87%E5%8F%91%E8%A1%8C%E7%89%8817/</link>
+      <guid>http://shiff.top/2023/03/11/%E6%97%A0%E6%95%88%E7%9A%84%E7%9B%AE%E6%A0%87%E5%8F%91%E8%A1%8C%E7%89%8817/</guid>
       <pubDate>Fri, 10 Mar 2023 20:12:04 GMT</pubDate>
       
         
@@ -30,16 +57,16 @@
       
       
       
+      <category domain="http://shiff.top/tags/%E8%B8%A9%E5%9D%91/">踩坑</category>
+      
       <category domain="http://shiff.top/tags/springboot/">springboot</category>
       
       <category domain="http://shiff.top/tags/idea/">idea</category>
       
-      <category domain="http://shiff.top/tags/%E8%B8%A9%E5%9D%91/">踩坑</category>
-      
       <category domain="http://shiff.top/tags/jdk/">jdk</category>
       
       
-      <comments>http://shiff.top/2023/03/11/17/#disqus_thread</comments>
+      <comments>http://shiff.top/2023/03/11/%E6%97%A0%E6%95%88%E7%9A%84%E7%9B%AE%E6%A0%87%E5%8F%91%E8%A1%8C%E7%89%8817/#disqus_thread</comments>
       
     </item>
     
