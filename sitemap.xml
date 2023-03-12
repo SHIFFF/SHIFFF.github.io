@@ -133,7 +133,7 @@
   </url>
   
   <url>
-    <loc>http://shiff.top/tags/MySQL/</loc>
+    <loc>http://shiff.top/tags/github/</loc>
     <lastmod>2023-03-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -147,20 +147,6 @@
   </url>
   
   <url>
-    <loc>http://shiff.top/tags/%E7%AB%99%E7%82%B9%E9%93%BE%E6%8E%A5/</loc>
-    <lastmod>2023-03-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://shiff.top/tags/springboot/</loc>
-    <lastmod>2023-03-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://shiff.top/tags/idea/</loc>
     <lastmod>2023-03-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -168,21 +154,14 @@
   </url>
   
   <url>
-    <loc>http://shiff.top/tags/jdk/</loc>
-    <lastmod>2023-03-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://shiff.top/tags/github/</loc>
-    <lastmod>2023-03-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://shiff.top/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/</loc>
+    <lastmod>2023-03-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://shiff.top/tags/MySQL/</loc>
     <lastmod>2023-03-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -202,6 +181,27 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>http://shiff.top/tags/springboot/</loc>
+    <lastmod>2023-03-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://shiff.top/tags/jdk/</loc>
+    <lastmod>2023-03-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://shiff.top/tags/%E7%AB%99%E7%82%B9%E9%93%BE%E6%8E%A5/</loc>
+    <lastmod>2023-03-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -212,14 +212,14 @@
   </url>
   
   <url>
-    <loc>http://shiff.top/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <loc>http://shiff.top/categories/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/JavaScript%E5%9F%BA%E7%A1%80/</loc>
     <lastmod>2023-03-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://shiff.top/categories/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/JavaScript%E5%9F%BA%E7%A1%80/</loc>
+    <loc>http://shiff.top/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
     <lastmod>2023-03-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
