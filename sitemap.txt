@@ -1,3 +1,5 @@
+http://shiff.top/2023/03/12/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8A%A5%E9%94%99Incorrect-string-value/
+http://shiff.top/2023/03/12/idea%E7%9A%84%E5%85%A8%E5%B1%80%E6%90%9C%E7%B4%A2%EF%BC%88%E6%9B%BF%E6%8D%A2%EF%BC%89%E5%BF%AB%E6%8D%B7%E9%94%AE/
 http://shiff.top/2023/03/12/%E7%AB%99%E7%82%B9%E8%AE%B0%E5%BD%95/
 http://shiff.top/2023/03/11/%E5%88%A9%E7%94%A8idea%E5%92%8Cmaven%E4%BB%93%E5%BA%93%E4%B8%8B%E8%BD%BD%E4%BE%9D%E8%B5%96/
 http://shiff.top/2023/03/11/github-clone%E5%85%8B%E9%9A%86%E6%8A%A5%E9%94%99/
@@ -10,9 +12,13 @@ http://shiff.top/about/index.html
 http://shiff.top/
 http://shiff.top/tags/github/
 http://shiff.top/tags/%E8%B8%A9%E5%9D%91/
-http://shiff.top/tags/springboot/
+http://shiff.top/tags/MySQL/
 http://shiff.top/tags/idea/
-http://shiff.top/tags/jdk/
+http://shiff.top/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/
 http://shiff.top/tags/maven/
 http://shiff.top/tags/%E4%BE%9D%E8%B5%96%E7%AE%A1%E7%90%86/
+http://shiff.top/tags/springboot/
+http://shiff.top/tags/jdk/
 http://shiff.top/tags/%E7%AB%99%E7%82%B9%E9%93%BE%E6%8E%A5/
+http://shiff.top/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/
+http://shiff.top/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/

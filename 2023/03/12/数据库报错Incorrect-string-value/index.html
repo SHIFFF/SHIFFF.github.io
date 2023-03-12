@@ -22,25 +22,23 @@
     var CONFIG = {"hostname":"shiff.top","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="出现无效的源发行版 就是jdk版本环境不一致造成的 在spring Initializr上下载的spring boot 版本默认是3.0.4 但是 springboot3.0 需要jdk17支持，如果没有安装jdk17 只需把springboot版本降低即可 我用的jdk版本是1.8，所以需要降低springboot版本">
+  <meta name="description" content="数据库报错Incorrect string value: ‘\xE7\x94\xB7‘ for column ‘name‘ at row 1 报错内容为在name列插入的第一条数据的字符串值是不正确的，主要原因是我插入的数据为汉字，为中文字符串，需要使用到utf-8字符集，而默认是使用的是latin1字符集。 解决方案：用这个命令更改表名，去覆盖它的原有字符集，就可以实现成功插入中文 1ALTER">
 <meta property="og:type" content="article">
-<meta property="og:title" content="无效的目标发行版17">
-<meta property="og:url" content="http://shiff.top/2023/03/11/%E6%97%A0%E6%95%88%E7%9A%84%E7%9B%AE%E6%A0%87%E5%8F%91%E8%A1%8C%E7%89%8817/index.html">
+<meta property="og:title" content="数据库报错Incorrect-string-value">
+<meta property="og:url" content="http://shiff.top/2023/03/12/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8A%A5%E9%94%99Incorrect-string-value/index.html">
 <meta property="og:site_name" content="微弱的光">
-<meta property="og:description" content="出现无效的源发行版 就是jdk版本环境不一致造成的 在spring Initializr上下载的spring boot 版本默认是3.0.4 但是 springboot3.0 需要jdk17支持，如果没有安装jdk17 只需把springboot版本降低即可 我用的jdk版本是1.8，所以需要降低springboot版本">
+<meta property="og:description" content="数据库报错Incorrect string value: ‘\xE7\x94\xB7‘ for column ‘name‘ at row 1 报错内容为在name列插入的第一条数据的字符串值是不正确的，主要原因是我插入的数据为汉字，为中文字符串，需要使用到utf-8字符集，而默认是使用的是latin1字符集。 解决方案：用这个命令更改表名，去覆盖它的原有字符集，就可以实现成功插入中文 1ALTER">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cdn.staticaly.com/gh/SHIFFF/Blogcdn@master/img/image-20230310153146114.png">
-<meta property="article:published_time" content="2023-03-10T20:12:04.000Z">
-<meta property="article:modified_time" content="2023-03-10T20:49:45.013Z">
+<meta property="og:image" content="c:\Users\12726\AppData\Roaming\Typora\typora-user-images\image-20230312024828536.png">
+<meta property="article:published_time" content="2023-03-12T09:32:36.000Z">
+<meta property="article:modified_time" content="2023-03-12T09:35:02.530Z">
 <meta property="article:author" content="shiff">
 <meta property="article:tag" content="踩坑">
-<meta property="article:tag" content="idea">
-<meta property="article:tag" content="springboot">
-<meta property="article:tag" content="jdk">
+<meta property="article:tag" content="MySQL">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.staticaly.com/gh/SHIFFF/Blogcdn@master/img/image-20230310153146114.png">
+<meta name="twitter:image" content="c:\Users\12726\AppData\Roaming\Typora\typora-user-images\image-20230312024828536.png">
 
-<link rel="canonical" href="http://shiff.top/2023/03/11/%E6%97%A0%E6%95%88%E7%9A%84%E7%9B%AE%E6%A0%87%E5%8F%91%E8%A1%8C%E7%89%8817/">
+<link rel="canonical" href="http://shiff.top/2023/03/12/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8A%A5%E9%94%99Incorrect-string-value/">
 
 
 <script id="page-configurations">
@@ -53,7 +51,7 @@
   };
 </script>
 
-  <title>无效的目标发行版17 | 微弱的光</title>
+  <title>数据库报错Incorrect-string-value | 微弱的光</title>
   
 
 
@@ -207,7 +205,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://shiff.top/2023/03/11/%E6%97%A0%E6%95%88%E7%9A%84%E7%9B%AE%E6%A0%87%E5%8F%91%E8%A1%8C%E7%89%8817/">
+    <link itemprop="mainEntityOfPage" href="http://shiff.top/2023/03/12/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8A%A5%E9%94%99Incorrect-string-value/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://avatars.githubusercontent.com/u/55538843?s=96&v=4">
@@ -220,7 +218,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          无效的目标发行版17
+          数据库报错Incorrect-string-value
         </h1>
 
         <div class="post-meta">
@@ -233,7 +231,20 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-03-11 04:12:04 / 修改时间：04:49:45" itemprop="dateCreated datePublished" datetime="2023-03-11T04:12:04+08:00">2023-03-11</time>
+              <time title="创建时间：2023-03-12 17:32:36 / 修改时间：17:35:02" itemprop="dateCreated datePublished" datetime="2023-03-12T17:32:36+08:00">2023-03-12</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url" rel="index"><span itemprop="name">数据库</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/" itemprop="url" rel="index"><span itemprop="name">MySQL</span></a>
+                </span>
             </span>
 
           
@@ -248,7 +259,7 @@
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
               </span>
-              <span>151</span>
+              <span>312</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -266,11 +277,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><img src="https://cdn.staticaly.com/gh/SHIFFF/Blogcdn@master/img/image-20230310153146114.png" alt="image-20230310153146114"></p>
-<p>出现无效的源发行版 就是jdk版本环境不一致造成的</p>
-<p>在spring Initializr上下载的spring boot 版本默认是3.0.4</p>
-<p>但是 springboot3.0 需要jdk17支持，如果没有安装jdk17 只需把springboot版本降低即可</p>
-<p>我用的jdk版本是1.8，所以需要降低springboot版本</p>
+        <h3 id="数据库报错Incorrect-string-value-‘-xE7-x94-xB7‘-for-column-‘name‘-at-row-1"><a href="#数据库报错Incorrect-string-value-‘-xE7-x94-xB7‘-for-column-‘name‘-at-row-1" class="headerlink" title="数据库报错Incorrect string value: ‘\xE7\x94\xB7‘ for column ‘name‘ at row 1"></a>数据库报错Incorrect string value: ‘\xE7\x94\xB7‘ for column ‘name‘ at row 1</h3><p><img src="C:\Users\12726\AppData\Roaming\Typora\typora-user-images\image-20230312024828536.png" alt="image-20230312024828536"></p>
+<p>报错内容为在name列插入的第一条数据的字符串值是不正确的，主要原因是我插入的数据为汉字，为中文字符串，需要使用到utf-8字符集，而默认是使用的是latin1字符集。</p>
+<p>解决方案：用这个命令更改表名，去覆盖它的原有字符集，就可以实现成功插入中文</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE interface_info（这里改成自己的表名） CONVERT TO CHARACTER SET utf8;</span><br></pre></td></tr></table></figure>
+
+<p>参考博文：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_63639665/article/details/128206602">https://blog.csdn.net/weixin_63639665/article/details/128206602</a></p>
 
     </div>
 
@@ -318,7 +330,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://shiff.top/2023/03/11/%E6%97%A0%E6%95%88%E7%9A%84%E7%9B%AE%E6%A0%87%E5%8F%91%E8%A1%8C%E7%89%8817/" title="无效的目标发行版17">http://shiff.top/2023/03/11/无效的目标发行版17/</a>
+    <a href="http://shiff.top/2023/03/12/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8A%A5%E9%94%99Incorrect-string-value/" title="数据库报错Incorrect-string-value">http://shiff.top/2023/03/12/数据库报错Incorrect-string-value/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -330,9 +342,7 @@
       <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/%E8%B8%A9%E5%9D%91/" rel="tag"># 踩坑</a>
-              <a href="/tags/idea/" rel="tag"># idea</a>
-              <a href="/tags/springboot/" rel="tag"># springboot</a>
-              <a href="/tags/jdk/" rel="tag"># jdk</a>
+              <a href="/tags/MySQL/" rel="tag"># MySQL</a>
           </div>
 
         
@@ -341,13 +351,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2023/02/27/hello-world/" rel="prev" title="Hello World">
-      <i class="fa fa-chevron-left"></i> Hello World
+    <a href="/2023/03/12/idea%E7%9A%84%E5%85%A8%E5%B1%80%E6%90%9C%E7%B4%A2%EF%BC%88%E6%9B%BF%E6%8D%A2%EF%BC%89%E5%BF%AB%E6%8D%B7%E9%94%AE/" rel="prev" title="idea的全局搜索（替换）快捷键">
+      <i class="fa fa-chevron-left"></i> idea的全局搜索（替换）快捷键
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2023/03/11/github-clone%E5%85%8B%E9%9A%86%E6%8A%A5%E9%94%99/" rel="next" title="github-clone克隆报错">
-      github-clone克隆报错 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -412,6 +419,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8A%A5%E9%94%99Incorrect-string-value-%E2%80%98-xE7-x94-xB7%E2%80%98-for-column-%E2%80%98name%E2%80%98-at-row-1"><span class="nav-number">1.</span> <span class="nav-text">数据库报错Incorrect string value: ‘\xE7\x94\xB7‘ for column ‘name‘ at row 1</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

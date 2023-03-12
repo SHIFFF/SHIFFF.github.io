@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://shiff.top/2023/03/12/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8A%A5%E9%94%99Incorrect-string-value/</loc>
+    
+    <lastmod>2023-03-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://shiff.top/2023/03/12/idea%E7%9A%84%E5%85%A8%E5%B1%80%E6%90%9C%E7%B4%A2%EF%BC%88%E6%9B%BF%E6%8D%A2%EF%BC%89%E5%BF%AB%E6%8D%B7%E9%94%AE/</loc>
+    
+    <lastmod>2023-03-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://shiff.top/2023/03/12/%E7%AB%99%E7%82%B9%E8%AE%B0%E5%BD%95/</loc>
     
     <lastmod>2023-03-12</lastmod>
@@ -106,7 +124,7 @@
   </url>
   
   <url>
-    <loc>http://shiff.top/tags/springboot/</loc>
+    <loc>http://shiff.top/tags/MySQL/</loc>
     <lastmod>2023-03-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -120,7 +138,7 @@
   </url>
   
   <url>
-    <loc>http://shiff.top/tags/jdk/</loc>
+    <loc>http://shiff.top/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/</loc>
     <lastmod>2023-03-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -141,6 +159,20 @@
   </url>
   
   <url>
+    <loc>http://shiff.top/tags/springboot/</loc>
+    <lastmod>2023-03-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://shiff.top/tags/jdk/</loc>
+    <lastmod>2023-03-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://shiff.top/tags/%E7%AB%99%E7%82%B9%E9%93%BE%E6%8E%A5/</loc>
     <lastmod>2023-03-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -148,5 +180,19 @@
   </url>
   
 
+  
+  <url>
+    <loc>http://shiff.top/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <lastmod>2023-03-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://shiff.top/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/</loc>
+    <lastmod>2023-03-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
 </urlset>
