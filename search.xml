@@ -17,6 +17,23 @@
       </tags>
   </entry>
   <entry>
+    <title>Typora的查找（替换）快捷键</title>
+    <url>/2023/03/14/Typora%E7%9A%84%E6%9F%A5%E6%89%BE%EF%BC%88%E6%9B%BF%E6%8D%A2%EF%BC%89%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
+    <content><![CDATA[<h3 id="Typora的查找（替换）快捷键"><a href="#Typora的查找（替换）快捷键" class="headerlink" title="Typora的查找（替换）快捷键"></a>Typora的查找（替换）快捷键</h3><ul>
+<li><p>查找：Ctrl+F</p>
+<p><img src="https://cdn.staticaly.com/gh/SHIFFF/Blogcdn@master/img/image-20230314102135161.png" alt="image-20230314102135161"></p>
+</li>
+<li><p>替换：Ctrl+H</p>
+</li>
+</ul>
+<p><img src="https://cdn.staticaly.com/gh/SHIFFF/Blogcdn@master/img/image-20230314102239226.png" alt="image-20230314102239226"></p>
+]]></content>
+      <tags>
+        <tag>Typora</tag>
+        <tag>快捷键</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>JavaScript基础语法-dom-bom-js-es6新语法-jQuery-数据可视化</title>
     <url>/2023/03/12/JavaScript%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-dom-bom-js-es6%E6%96%B0%E8%AF%AD%E6%B3%95-jQuery-%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/</url>
     <content><![CDATA[<h1 id="JavaScript基础语法-dom-bom-js-es6新语法-jQuery-数据可视化"><a href="#JavaScript基础语法-dom-bom-js-es6新语法-jQuery-数据可视化" class="headerlink" title="JavaScript基础语法-dom-bom-js-es6新语法-jQuery-数据可视化"></a>JavaScript基础语法-dom-bom-js-es6新语法-jQuery-数据可视化</h1><p>该课程笔记基于b站pink老师的课程视频，视频链接：<a href="https://www.bilibili.com/video/BV1Sy4y1C7ha/?spm_id_from=333.337.search-card.all.click&vd_source=47b8ae38c6099b5bc1a761ca77b05155">https://www.bilibili.com/video/BV1Sy4y1C7ha/?spm_id_from=333.337.search-card.all.click&amp;vd_source=47b8ae38c6099b5bc1a761ca77b05155</a></p>
@@ -379,9 +396,9 @@
 <p><img src="https://cdn.staticaly.com/gh/SHIFFF/Blogcdn@master/img/image-20230311230702057.png" alt="image-20230311230702057"></p>
 ]]></content>
       <tags>
+        <tag>快捷键</tag>
         <tag>踩坑</tag>
         <tag>idea</tag>
-        <tag>快捷键</tag>
       </tags>
   </entry>
   <entry>

@@ -9,8 +9,35 @@
     <atom:link href="http://shiff.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>千里之行，始于足下</description>
-    <pubDate>Sun, 12 Mar 2023 11:38:03 GMT</pubDate>
+    <pubDate>Tue, 14 Mar 2023 02:25:17 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Typora的查找（替换）快捷键</title>
+      <link>http://shiff.top/2023/03/14/Typora%E7%9A%84%E6%9F%A5%E6%89%BE%EF%BC%88%E6%9B%BF%E6%8D%A2%EF%BC%89%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
+      <guid>http://shiff.top/2023/03/14/Typora%E7%9A%84%E6%9F%A5%E6%89%BE%EF%BC%88%E6%9B%BF%E6%8D%A2%EF%BC%89%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
+      <pubDate>Tue, 14 Mar 2023 02:23:38 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h3 id=&quot;Typora的查找（替换）快捷键&quot;&gt;&lt;a href=&quot;#Typora的查找（替换）快捷键&quot; class=&quot;headerlink&quot; title=&quot;Typora的查找（替换）快捷键&quot;&gt;&lt;/a&gt;Typora的查找（替换）快捷键&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;查找：Ct</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h3 id="Typora的查找（替换）快捷键"><a href="#Typora的查找（替换）快捷键" class="headerlink" title="Typora的查找（替换）快捷键"></a>Typora的查找（替换）快捷键</h3><ul><li><p>查找：Ctrl+F</p><p><img src="https://cdn.staticaly.com/gh/SHIFFF/Blogcdn@master/img/image-20230314102135161.png" alt="image-20230314102135161"></p></li><li><p>替换：Ctrl+H</p></li></ul><p><img src="https://cdn.staticaly.com/gh/SHIFFF/Blogcdn@master/img/image-20230314102239226.png" alt="image-20230314102239226"></p>]]></content:encoded>
+      
+      
+      
+      <category domain="http://shiff.top/tags/Typora/">Typora</category>
+      
+      <category domain="http://shiff.top/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/">快捷键</category>
+      
+      
+      <comments>http://shiff.top/2023/03/14/Typora%E7%9A%84%E6%9F%A5%E6%89%BE%EF%BC%88%E6%9B%BF%E6%8D%A2%EF%BC%89%E5%BF%AB%E6%8D%B7%E9%94%AE/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>JavaScript基础语法-dom-bom-js-es6新语法-jQuery-数据可视化</title>
@@ -89,11 +116,11 @@
       
       
       
+      <category domain="http://shiff.top/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/">快捷键</category>
+      
       <category domain="http://shiff.top/tags/%E8%B8%A9%E5%9D%91/">踩坑</category>
       
       <category domain="http://shiff.top/tags/idea/">idea</category>
-      
-      <category domain="http://shiff.top/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/">快捷键</category>
       
       
       <comments>http://shiff.top/2023/03/12/idea%E7%9A%84%E5%85%A8%E5%B1%80%E6%90%9C%E7%B4%A2%EF%BC%88%E6%9B%BF%E6%8D%A2%EF%BC%89%E5%BF%AB%E6%8D%B7%E9%94%AE/#disqus_thread</comments>
