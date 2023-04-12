@@ -22,25 +22,23 @@
     var CONFIG = {"hostname":"shiff.top","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="出现无效的源发行版 就是jdk版本环境不一致造成的 在spring Initializr上下载的spring boot 版本默认是3.0.4 但是 springboot3.0 需要jdk17支持，如果没有安装jdk17 只需把springboot版本降低即可 我用的jdk版本是1.8，所以需要降低springboot版本">
+  <meta name="description" content="【哈希+map】2404. 出现最频繁的偶数元素  Problem: 2404. 出现最频繁的偶数元素  思路从数组中找出出现次数最多的偶数（如果这样的数有多个，选取较小的那个） 解题方法原本的想法是使用map+set，map当作哈希表用来计数，set来记录出现次数最多的偶数，(看了大佬的代码)后来优化了只用map，使用int变量res记录出现次数最多的偶数，如果出现次数一样多，且这个数较小，则更">
 <meta property="og:type" content="article">
-<meta property="og:title" content="无效的目标发行版17">
-<meta property="og:url" content="http://shiff.top/2023/03/11/%E6%97%A0%E6%95%88%E7%9A%84%E7%9B%AE%E6%A0%87%E5%8F%91%E8%A1%8C%E7%89%8817/index.html">
+<meta property="og:title" content="【哈希+map】2404.出现最频繁的偶数元素">
+<meta property="og:url" content="http://shiff.top/2023/04/13/%E5%87%BA%E7%8E%B0%E6%9C%80%E9%A2%91%E7%B9%81%E7%9A%84%E5%81%B6%E6%95%B0%E5%85%83%E7%B4%A0/index.html">
 <meta property="og:site_name" content="微弱的光">
-<meta property="og:description" content="出现无效的源发行版 就是jdk版本环境不一致造成的 在spring Initializr上下载的spring boot 版本默认是3.0.4 但是 springboot3.0 需要jdk17支持，如果没有安装jdk17 只需把springboot版本降低即可 我用的jdk版本是1.8，所以需要降低springboot版本">
+<meta property="og:description" content="【哈希+map】2404. 出现最频繁的偶数元素  Problem: 2404. 出现最频繁的偶数元素  思路从数组中找出出现次数最多的偶数（如果这样的数有多个，选取较小的那个） 解题方法原本的想法是使用map+set，map当作哈希表用来计数，set来记录出现次数最多的偶数，(看了大佬的代码)后来优化了只用map，使用int变量res记录出现次数最多的偶数，如果出现次数一样多，且这个数较小，则更">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cdn.staticaly.com/gh/SHIFFF/Blogcdn@master/img/image-20230310153146114.png">
-<meta property="article:published_time" content="2023-03-10T20:12:04.000Z">
-<meta property="article:modified_time" content="2023-03-10T20:49:45.013Z">
+<meta property="article:published_time" content="2023-04-12T17:40:12.000Z">
+<meta property="article:modified_time" content="2023-04-12T17:42:38.833Z">
 <meta property="article:author" content="shiff">
-<meta property="article:tag" content="踩坑">
-<meta property="article:tag" content="idea">
-<meta property="article:tag" content="springboot">
-<meta property="article:tag" content="jdk">
+<meta property="article:tag" content="数组">
+<meta property="article:tag" content="LeetCode">
+<meta property="article:tag" content="算法">
+<meta property="article:tag" content="哈希">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.staticaly.com/gh/SHIFFF/Blogcdn@master/img/image-20230310153146114.png">
 
-<link rel="canonical" href="http://shiff.top/2023/03/11/%E6%97%A0%E6%95%88%E7%9A%84%E7%9B%AE%E6%A0%87%E5%8F%91%E8%A1%8C%E7%89%8817/">
+<link rel="canonical" href="http://shiff.top/2023/04/13/%E5%87%BA%E7%8E%B0%E6%9C%80%E9%A2%91%E7%B9%81%E7%9A%84%E5%81%B6%E6%95%B0%E5%85%83%E7%B4%A0/">
 
 
 <script id="page-configurations">
@@ -53,7 +51,7 @@
   };
 </script>
 
-  <title>无效的目标发行版17 | 微弱的光</title>
+  <title>【哈希+map】2404.出现最频繁的偶数元素 | 微弱的光</title>
   
 
 
@@ -207,7 +205,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://shiff.top/2023/03/11/%E6%97%A0%E6%95%88%E7%9A%84%E7%9B%AE%E6%A0%87%E5%8F%91%E8%A1%8C%E7%89%8817/">
+    <link itemprop="mainEntityOfPage" href="http://shiff.top/2023/04/13/%E5%87%BA%E7%8E%B0%E6%9C%80%E9%A2%91%E7%B9%81%E7%9A%84%E5%81%B6%E6%95%B0%E5%85%83%E7%B4%A0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://avatars.githubusercontent.com/u/55538843?s=96&v=4">
@@ -220,7 +218,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          无效的目标发行版17
+          【哈希+map】2404.出现最频繁的偶数元素
         </h1>
 
         <div class="post-meta">
@@ -233,7 +231,24 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-03-11 04:12:04 / 修改时间：04:49:45" itemprop="dateCreated datePublished" datetime="2023-03-11T04:12:04+08:00">2023-03-11</time>
+              <time title="创建时间：2023-04-13 01:40:12 / 修改时间：01:42:38" itemprop="dateCreated datePublished" datetime="2023-04-13T01:40:12+08:00">2023-04-13</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/LeetCode/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/" itemprop="url" rel="index"><span itemprop="name">每日一题</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/LeetCode/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/2023-4-13/" itemprop="url" rel="index"><span itemprop="name">2023.4.13</span></a>
+                </span>
             </span>
 
           
@@ -248,13 +263,13 @@
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
               </span>
-              <span>151</span>
+              <span>1.8k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
-              <span>1 分钟</span>
+              <span>2 分钟</span>
             </span>
 
         </div>
@@ -266,11 +281,29 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><img src="https://cdn.staticaly.com/gh/SHIFFF/Blogcdn@master/img/image-20230310153146114.png" alt="image-20230310153146114"></p>
-<p>出现无效的源发行版 就是jdk版本环境不一致造成的</p>
-<p>在spring Initializr上下载的spring boot 版本默认是3.0.4</p>
-<p>但是 springboot3.0 需要jdk17支持，如果没有安装jdk17 只需把springboot版本降低即可</p>
-<p>我用的jdk版本是1.8，所以需要降低springboot版本</p>
+        <h2 id="【哈希-map】2404-出现最频繁的偶数元素"><a href="#【哈希-map】2404-出现最频繁的偶数元素" class="headerlink" title="【哈希+map】2404. 出现最频繁的偶数元素"></a>【哈希+map】2404. 出现最频繁的偶数元素</h2><blockquote>
+<p> Problem: <a target="_blank" rel="noopener" href="https://leetcode.cn/problems/most-frequent-even-element/description/">2404. 出现最频繁的偶数元素</a></p>
+</blockquote>
+<h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><p>从数组中找出出现次数最多的偶数（如果这样的数有多个，选取较小的那个）</p>
+<h1 id="解题方法"><a href="#解题方法" class="headerlink" title="解题方法"></a>解题方法</h1><p>原本的想法是使用map+set，map当作哈希表用来计数，set来记录出现次数最多的偶数，(看了大佬的代码)后来优化了只用map，使用int变量res记录出现次数最多的偶数，如果出现次数一样多，且这个数较小，则更新res。</p>
+<p>顺便复习了下C++中map和set的用法，这两个都只能通过使用迭代器遍历，但是map可以通过map[key]的方式来访问和赋值，可使用的函数用<code>begin()</code>、<code>end()</code>、<code>find()</code>、<code>clear()</code>等等。</p>
+<h1 id="复杂度"><a href="#复杂度" class="headerlink" title="复杂度"></a>复杂度</h1><ul>
+<li><p>时间复杂度: </p>
+<blockquote>
+<p>$O(n)$</p>
+</blockquote>
+</li>
+<li><p>空间复杂度: </p>
+<blockquote>
+<p>$O(n)$</p>
+</blockquote>
+</li>
+</ul>
+<h1 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h1><p>原版:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">/***</span></span><br><span class="line"><span class="comment">原版</span></span><br><span class="line"><span class="comment">从数组中找出出现次数最多的偶数（如果这样的数有多个，选取较小的那个）</span></span><br><span class="line"><span class="comment">***/</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">mostFrequentEven</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//记录偶数出现的次数,存在mp中</span></span><br><span class="line">        unordered_map&lt;<span class="type">int</span>, <span class="type">int</span>&gt; mp;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; nums.<span class="built_in">size</span>(); i++)&#123;</span><br><span class="line">            <span class="type">int</span> num = nums[i];</span><br><span class="line">            <span class="keyword">if</span>(num%<span class="number">2</span>==<span class="number">0</span>)&#123;</span><br><span class="line">                <span class="keyword">if</span>(mp.<span class="built_in">find</span>(num)==mp.<span class="built_in">end</span>())&#123;<span class="comment">//找不到</span></span><br><span class="line">                    mp[num] = <span class="number">1</span>;</span><br><span class="line">                &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                    mp[num]++;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//找到mp中的最大值进行插入</span></span><br><span class="line">        <span class="type">int</span> max =  <span class="number">-1</span>;</span><br><span class="line">        set&lt;<span class="type">int</span>&gt; res;</span><br><span class="line">        <span class="keyword">for</span>(unordered_map&lt;<span class="type">int</span>, <span class="type">int</span>&gt;::iterator it = mp.<span class="built_in">begin</span>(); it != mp.<span class="built_in">end</span>(); it++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(it-&gt;second &gt; max)&#123;</span><br><span class="line">                max = it-&gt;second;<span class="comment">//更新最大值</span></span><br><span class="line">                res.<span class="built_in">clear</span>();</span><br><span class="line">                res.<span class="built_in">insert</span>(it-&gt;first);</span><br><span class="line">            &#125;<span class="keyword">else</span> <span class="keyword">if</span>(it-&gt;second == max)&#123;</span><br><span class="line">                res.<span class="built_in">insert</span>(it-&gt;first);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(max==<span class="number">-1</span>) <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">return</span> *(res.<span class="built_in">begin</span>());</span><br><span class="line">    </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>简单优化后:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/***</span></span><br><span class="line"><span class="comment">简单优化后</span></span><br><span class="line"><span class="comment">从数组中找出出现次数最多的偶数（如果这样的数有多个，选取较小的那个）</span></span><br><span class="line"><span class="comment">***/</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">mostFrequentEven</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//记录偶数出现的次数,存在mp中</span></span><br><span class="line">        unordered_map&lt;<span class="type">int</span>, <span class="type">int</span>&gt; mp;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; nums.<span class="built_in">size</span>(); i++)&#123;</span><br><span class="line">            <span class="type">int</span> num = nums[i];</span><br><span class="line">            <span class="keyword">if</span>(num%<span class="number">2</span>==<span class="number">0</span>)&#123;</span><br><span class="line">                <span class="keyword">if</span>(mp.<span class="built_in">find</span>(num)==mp.<span class="built_in">end</span>())&#123;<span class="comment">//找不到</span></span><br><span class="line">                    mp[num] = <span class="number">1</span>;</span><br><span class="line">                &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                    mp[num]++;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//找到mp中的最大值进行插入</span></span><br><span class="line">        <span class="type">int</span> max =  <span class="number">-1</span>;</span><br><span class="line">        <span class="type">int</span> res;</span><br><span class="line">        <span class="keyword">for</span>(unordered_map&lt;<span class="type">int</span>, <span class="type">int</span>&gt;::iterator it = mp.<span class="built_in">begin</span>(); it != mp.<span class="built_in">end</span>(); it++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(it-&gt;second &gt; max)&#123;</span><br><span class="line">                max = it-&gt;second;<span class="comment">//更新最大值</span></span><br><span class="line">                res = it-&gt;first;</span><br><span class="line">            &#125;<span class="keyword">else</span> <span class="keyword">if</span>(it-&gt;second == max &amp;&amp; res &gt; it-&gt;first)&#123;</span><br><span class="line">                 res = it-&gt;first;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(max==<span class="number">-1</span>) <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">return</span> res;</span><br><span class="line">    </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
     </div>
 
@@ -318,7 +351,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://shiff.top/2023/03/11/%E6%97%A0%E6%95%88%E7%9A%84%E7%9B%AE%E6%A0%87%E5%8F%91%E8%A1%8C%E7%89%8817/" title="无效的目标发行版17">http://shiff.top/2023/03/11/无效的目标发行版17/</a>
+    <a href="http://shiff.top/2023/04/13/%E5%87%BA%E7%8E%B0%E6%9C%80%E9%A2%91%E7%B9%81%E7%9A%84%E5%81%B6%E6%95%B0%E5%85%83%E7%B4%A0/" title="【哈希+map】2404.出现最频繁的偶数元素">http://shiff.top/2023/04/13/出现最频繁的偶数元素/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -329,10 +362,10 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E8%B8%A9%E5%9D%91/" rel="tag"># 踩坑</a>
-              <a href="/tags/idea/" rel="tag"># idea</a>
-              <a href="/tags/springboot/" rel="tag"># springboot</a>
-              <a href="/tags/jdk/" rel="tag"># jdk</a>
+              <a href="/tags/%E6%95%B0%E7%BB%84/" rel="tag"># 数组</a>
+              <a href="/tags/LeetCode/" rel="tag"># LeetCode</a>
+              <a href="/tags/%E7%AE%97%E6%B3%95/" rel="tag"># 算法</a>
+              <a href="/tags/%E5%93%88%E5%B8%8C/" rel="tag"># 哈希</a>
           </div>
 
         
@@ -341,13 +374,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2023/02/27/hello-world/" rel="prev" title="Hello World">
-      <i class="fa fa-chevron-left"></i> Hello World
+    <a href="/2023/04/13/%E6%AE%B5%E5%BC%8F%E5%9B%9E%E6%96%87/" rel="prev" title="【贪心+模拟】 1147. 段式回文">
+      <i class="fa fa-chevron-left"></i> 【贪心+模拟】 1147. 段式回文
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2023/03/11/github-clone%E5%85%8B%E9%9A%86%E6%8A%A5%E9%94%99/" rel="next" title="github-clone克隆报错">
-      github-clone克隆报错 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -412,6 +442,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E3%80%90%E5%93%88%E5%B8%8C-map%E3%80%912404-%E5%87%BA%E7%8E%B0%E6%9C%80%E9%A2%91%E7%B9%81%E7%9A%84%E5%81%B6%E6%95%B0%E5%85%83%E7%B4%A0"><span class="nav-number">1.</span> <span class="nav-text">【哈希+map】2404. 出现最频繁的偶数元素</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF"><span class="nav-number"></span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%A7%A3%E9%A2%98%E6%96%B9%E6%B3%95"><span class="nav-number"></span> <span class="nav-text">解题方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%A4%8D%E6%9D%82%E5%BA%A6"><span class="nav-number"></span> <span class="nav-text">复杂度</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Code"><span class="nav-number"></span> <span class="nav-text">Code</span></a></div>
       </div>
       <!--/noindex-->
 
