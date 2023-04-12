@@ -9,8 +9,44 @@
     <atom:link href="http://shiff.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>千里之行，始于足下</description>
-    <pubDate>Wed, 15 Mar 2023 20:45:10 GMT</pubDate>
+    <pubDate>Wed, 12 Apr 2023 17:26:30 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>【13】贪心+模拟 1147. 段式回文</title>
+      <link>http://shiff.top/2023/04/13/%E6%AE%B5%E5%BC%8F%E5%9B%9E%E6%96%87/</link>
+      <guid>http://shiff.top/2023/04/13/%E6%AE%B5%E5%BC%8F%E5%9B%9E%E6%96%87/</guid>
+      <pubDate>Wed, 12 Apr 2023 17:22:36 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;【13】贪心-模拟-1147-段式回文&quot;&gt;&lt;a href=&quot;#【13】贪心-模拟-1147-段式回文&quot; class=&quot;headerlink&quot; title=&quot;【13】贪心+模拟 1147. 段式回文&quot;&gt;&lt;/a&gt;【13】贪心+模拟 1147. 段式回文&lt;/h2&gt;&lt;bl</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="【13】贪心-模拟-1147-段式回文"><a href="#【13】贪心-模拟-1147-段式回文" class="headerlink" title="【13】贪心+模拟 1147. 段式回文"></a>【13】贪心+模拟 1147. 段式回文</h2><blockquote><p>Problem: <a href="https://leetcode.cn/problems/longest-chunked-palindrome-decomposition/description/">1147. 段式回文</a></p></blockquote><p>[TOC]</p><h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><blockquote><p> 拆分字符串，使得拆分的字符串的前部分和后部分完全相同，返回能够拆分出的最大子串数</p><p> 贪心：拆分时，能拆就拆&#x3D;&gt;拆分后的字符串尽可能的长&#x3D;&gt;能够拆分出尽可能多的子串</p><p>从小到大递归子串长度，模拟切割</p></blockquote><h1 id="解题方法"><a href="#解题方法" class="headerlink" title="解题方法"></a>解题方法</h1><blockquote><p> 递归：<br>    含义：当前字符串，能够拆分出的最大子串数<br>    边界：不能拆&#x3D;&gt;空字符串&#x3D;&gt;长度为0</p><p> 字符串的切片[(par1)..(par2)] &#x3D;&gt;[par1,par2) 左闭右开</p></blockquote><h1 id="复杂度"><a href="#复杂度" class="headerlink" title="复杂度"></a>复杂度</h1><ul><li><p>时间复杂度: </p><blockquote><p> $O(n^2)$</p></blockquote></li><li><p>空间复杂度: </p><blockquote><p> $O(n)$</p></blockquote></li></ul><h1 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h1><p><code>s.substr(i,b)</code>: <code>i</code>表示从第<code>i</code>个位置开始选取长度为<code>b</code>的子串，<strong>b省略</strong>默认取到字符串末尾</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">longestDecomposition</span><span class="params">(string text)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> n = text.<span class="built_in">length</span>();</span><br><span class="line">        <span class="keyword">if</span>(n==<span class="number">0</span>) <span class="keyword">return</span> <span class="number">0</span>;<span class="comment">//递归边界,长度为0不能拆，返回子串数为0</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n/<span class="number">2</span> ; i++)&#123;<span class="comment">//枚举前后缀长度,从小到大递归前后缀长度可以保证每次分割都是按能拆就拆的思想分割的</span></span><br><span class="line">            <span class="keyword">if</span>(text.<span class="built_in">substr</span>(<span class="number">0</span>,i)==text.<span class="built_in">substr</span>(n-i))&#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="number">2</span> + <span class="built_in">longestDecomposition</span>(text.<span class="built_in">substr</span>(i,n<span class="number">-2</span>*i));</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      <category domain="http://shiff.top/categories/LeetCode/">LeetCode</category>
+      
+      <category domain="http://shiff.top/categories/LeetCode/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/">每日一题</category>
+      
+      <category domain="http://shiff.top/categories/LeetCode/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/2023-4-12/">2023.4.12</category>
+      
+      
+      <category domain="http://shiff.top/tags/%E6%95%B0%E7%BB%84/">数组</category>
+      
+      <category domain="http://shiff.top/tags/LeetCode/">LeetCode</category>
+      
+      <category domain="http://shiff.top/tags/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      <category domain="http://shiff.top/tags/%E8%B4%AA%E5%BF%83/">贪心</category>
+      
+      
+      <comments>http://shiff.top/2023/04/13/%E6%AE%B5%E5%BC%8F%E5%9B%9E%E6%96%87/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>217.存在重复元素【简单】</title>
@@ -265,43 +301,12 @@
       
       
       
-      <category domain="http://shiff.top/tags/github/">github</category>
-      
       <category domain="http://shiff.top/tags/%E8%B8%A9%E5%9D%91/">踩坑</category>
+      
+      <category domain="http://shiff.top/tags/github/">github</category>
       
       
       <comments>http://shiff.top/2023/03/11/github-clone%E5%85%8B%E9%9A%86%E6%8A%A5%E9%94%99/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>无效的目标发行版17</title>
-      <link>http://shiff.top/2023/03/11/%E6%97%A0%E6%95%88%E7%9A%84%E7%9B%AE%E6%A0%87%E5%8F%91%E8%A1%8C%E7%89%8817/</link>
-      <guid>http://shiff.top/2023/03/11/%E6%97%A0%E6%95%88%E7%9A%84%E7%9B%AE%E6%A0%87%E5%8F%91%E8%A1%8C%E7%89%8817/</guid>
-      <pubDate>Fri, 10 Mar 2023 20:12:04 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.staticaly.com/gh/SHIFFF/Blogcdn@master/img/image-20230310153146114.png&quot; alt=&quot;image-20230310153146114&quot;&gt;&lt;/p&gt;
-&lt;p&gt;出现无效的</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.staticaly.com/gh/SHIFFF/Blogcdn@master/img/image-20230310153146114.png" alt="image-20230310153146114"></p><p>出现无效的源发行版 就是jdk版本环境不一致造成的</p><p>在spring Initializr上下载的spring boot 版本默认是3.0.4</p><p>但是 springboot3.0 需要jdk17支持，如果没有安装jdk17 只需把springboot版本降低即可</p><p>我用的jdk版本是1.8，所以需要降低springboot版本</p>]]></content:encoded>
-      
-      
-      
-      <category domain="http://shiff.top/tags/%E8%B8%A9%E5%9D%91/">踩坑</category>
-      
-      <category domain="http://shiff.top/tags/idea/">idea</category>
-      
-      <category domain="http://shiff.top/tags/springboot/">springboot</category>
-      
-      <category domain="http://shiff.top/tags/jdk/">jdk</category>
-      
-      
-      <comments>http://shiff.top/2023/03/11/%E6%97%A0%E6%95%88%E7%9A%84%E7%9B%AE%E6%A0%87%E5%8F%91%E8%A1%8C%E7%89%8817/#disqus_thread</comments>
       
     </item>
     
